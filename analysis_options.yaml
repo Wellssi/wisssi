@@ -40,3 +40,6 @@ linter:
     prefer_final_parameters: false
     public_member_api_docs: false
     unnecessary_final: false
+
+    # REF: https://dart.dev/tools/linter-rules/omit_obvious_property_types#incompatible-rules
+    omit_obvious_property_types: false
