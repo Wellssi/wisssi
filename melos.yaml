@@ -1,0 +1,6 @@
+name: wisssi
+repository: https://github.com/Wellssi/wisssi
+
+packages:
+  - pakcages/*
+  - packages/*/*
