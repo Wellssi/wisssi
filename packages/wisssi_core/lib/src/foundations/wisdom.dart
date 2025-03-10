@@ -1,4 +1,4 @@
-import '../wisssi_core_base.dart';
+import '../constants/constants.dart';
 
 class Wisdom {
   const Wisdom({required this.name, required this.description});
