@@ -7,12 +7,14 @@ enum LanguageType {
 
   const LanguageType({required this.name});
 
-  final String name;
-}
+  static LanguageType? fromString(String name) {
+    if (name.isEmpty) {
+      return null;
+    }
 
-extension LanguageTypeExtension on LanguageType {
-  LanguageType? fromString(String name) {
-    switch (name) {
+    final String lowerName = name.toLowerCase();
+
+    switch (lowerName) {
       case _ko:
         return LanguageType.ko;
       case _en:
@@ -21,4 +23,6 @@ extension LanguageTypeExtension on LanguageType {
         return null;
     }
   }
+
+  final String name;
 }
